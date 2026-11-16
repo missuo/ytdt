@@ -1,0 +1,32 @@
+{
+  "name": "ytdt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "YouTube dual subtitles with context-aware AI translation and a timeline transcript panel",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "typescript": "^7.0.2",
+    "wxt": "^0.21.5"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "spawn-sync"
+    ]
+  }
+}

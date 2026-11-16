@@ -1,0 +1,51 @@
+:host {
+  all: initial;
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  font-family: 'YouTube Noto', 'Roboto', 'Arial Unicode Ms', 'Arial', 'PingFang SC', 'Noto Sans CJK SC', sans-serif;
+}
+
+.wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.18em;
+  text-align: center;
+  transition: bottom 0.2s ease;
+}
+:host([data-controls]) .wrap {
+  bottom: max(6%, 64px);
+}
+
+.line {
+  display: inline;
+  padding: 0.08em 0.32em;
+  line-height: 1.45;
+  color: #fff;
+  background: rgba(8, 8, 8, 0.72);
+  border-radius: 0.18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  white-space: pre-wrap;
+}
+.line.tr {
+  font-size: 1em;
+  font-weight: 500;
+}
+.line.src {
+  font-size: 0.82em;
+  color: #e8e8e8;
+}
+.wrap > div:only-child .line.src {
+  font-size: 1em;
+  color: #fff;
+}
